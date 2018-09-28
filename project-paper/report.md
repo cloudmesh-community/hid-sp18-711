@@ -173,7 +173,7 @@ accessing our Raspberry Pi remotely.
 
 #### OpenCV
 
-OpenCV (Open Source Computer Vision Library) is an open source computer
+Open Source Computer Vision Library (OpenCV) is an open source computer
 vision and machine learning software library. OpenCV was built to
 provide a common infrastructure for computer vision applications and to
 accelerate the use of machine perception in the commercial products.
@@ -220,7 +220,7 @@ wherein we have to install the recommended operating system on the micro
 SD card. There are two ways to interact with your Raspberry Pi. Either
 you can interact directly through HDMI port by connecting HDMI to VGA
 cable, and keyboard and mouse or else you can interact from any other
-system through SSH (Secure Shell) [@deligence2017].
+system through Secure Shell (SSH) [@deligence2017].
 
 #### Raspberry Pi Camera
 
