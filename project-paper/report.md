@@ -4,8 +4,7 @@ I523, HID319, SP18-711, mkagita@iu.edu
 
 TODO: indent them under the title
 
-Introduction
-============
+# Introduction
 
 A Computer Vision application which has always encouraged people,
 concern about the capability and capacity of robots and computers to
@@ -65,8 +64,7 @@ recognize the faces based on the user database. Once the human face is
 recognized, it will intimate to corresponding authorities about the
 human and will help in guiding assistance.
 
-Face Detection
-==============
+# Face Detection
 
 Face Detection is a technique referred to computer vision technology
 which is able to identify human faces within digital
@@ -84,8 +82,7 @@ have focus in that particular area. Face Detection techniques will be
 widely used in counting how many numbers of visitors attending a
 particular event.
 
-How Face Detection Works
-------------------------
+## How Face Detection Works
 
 While Face Detection process is somewhat complex, the algorithms will
 start off by searching for human eyes at first. Eyes usually represent a
@@ -97,8 +94,7 @@ that it has successfully detected a human face from the facial region.
 Additional tests can be conducted by the algorithm to make sure and
 validate if the human face is detected [@jesse2017].
 
-Face Recognition
-================
+# Face Recognition
 
 Like most of the biometric solutions, face recognition technology will
 be used for identification and authentication purposes by measuring and
@@ -136,8 +132,7 @@ System](images/Face-recognition.jpg){#fig:face-recognition}
 
 TODO: +@#fig:face-recognition must be cited in text
 
-Face Recognition and Big Data Analysis
---------------------------------------
+## Face Recognition and Big Data Analysis
 
 Face Recognition and Big Data are two distinct technologies which are
 having hardly anything in common. But when they both are put together, a
@@ -154,31 +149,29 @@ recognition software will compare with huge database of faces that are
 located in the cloud. Once the face features match, robot car will
 respond with the unique name that is set for that human face.
 
-Software and Hardware Specifications
-====================================
+# Software and Hardware Specifications
 
 OpenCV is to be installed in Raspberry Pi to detect human faces within
 the captured images. Kairos face recognition software is used to
 recognize a human face and identify with the corresponding name.
 
-Software Used
--------------
+## Software Used
 
-### Raspbian OS
+#### Raspbian OS
 
 This is the recommended OS for Raspberry Pi 3. Raspbian OS is Debian
 based operating system. It can be installed from NOOBS installer.
 Raspbian comes with various pre-installed software such as Python, Sonic
 Pi, Java, Mathematica for programming and education.
 
-### Putty
+#### Putty
 
 PuTTY is an SSH and telnet client for the Windows platform. PuTTY is
 open source software that is available with source code and is developed
 and supported by a group of volunteers. Here we are using putty for
 accessing our Raspberry Pi remotely.
 
-### OpenCV
+#### OpenCV
 
 OpenCV (Open Source Computer Vision Library) is an open source computer
 vision and machine learning software library. OpenCV was built to
@@ -192,14 +185,14 @@ algorithms can be used to detect and recognize faces, identify objects,
 classify human actions in videos, track camera movements, track moving
 objects and extract 3D models of objects [@opencv].
 
-### Python 2 IDE
+#### Python 2 IDE
 
 Python 2.7.x version Integrated Development Environment is used to
 compile python program in Raspberry Pi. IDE is a text editor plus
 terminal combination which is used to work on large projects with
 complex code bases.
 
-### Kairos Face Recognition Software
+#### Kairos Face Recognition Software
 
 Kairos is an artificial intelligence company specializing in face
 recognition. Through computer vision and machine learning, Kairos can
@@ -213,10 +206,9 @@ face database. If it matches then will reply with the human name.
 
 Kairos navigates the complexities of face analysis technology.
 
-Hardware Used
--------------
+## Hardware Used
 
-### Raspberry Pi 3
+#### Raspberry Pi 3
 
 Raspberry Pi 3 is the latest version of Raspberry Pi. Unless previous
 versions, this have an inbuilt Bluetooth platform and a wifi support
@@ -230,7 +222,7 @@ you can interact directly through HDMI port by connecting HDMI to VGA
 cable, and keyboard and mouse or else you can interact from any other
 system through SSH (Secure Shell) [@deligence2017].
 
-### Raspberry Pi Camera
+#### Raspberry Pi Camera
 
 The Raspberry Pi camera module can be used to take high-definition
 video, as well as stills photographs. It's easy to use for beginners but
@@ -239,7 +231,7 @@ knowledge. There are lots of examples online of people using it for
 time-lapse, slow-motion and other video cleverness. You can also use the
 libraries we bundle with the camera to create effects.
 
-### Robot Car Chassis Kit
+#### Robot Car Chassis Kit
 
 The Mechanical design of the Robot car includes hardware such as motor
 and wheel placement and body set-up. Robot car uses two gear-motors
@@ -251,8 +243,7 @@ to control the speed and direction of the two gear motor wheels.
 Ultrasonic sensors are placed on the front side of the robot which is
 capable to detect the objects on its path [@gregor2017].
 
-System Architecture
-===================
+# System Architecture
 
 System Architecture consists of following blocks:
 
@@ -265,11 +256,9 @@ System Architecture consists of following blocks:
 -   SG90 Servo Motor.
 -   Wires, Breadboard, Small PCB.
 
-Setup
-=====
+# Setup
 
-Connect Raspberry Pi
---------------------
+## Connect Raspberry Pi
 
 This section includes connectivity of Raspberry Pi to wifi.
 
@@ -286,8 +275,7 @@ This section includes connectivity of Raspberry Pi to wifi.
 -   Enable wifi located at the upper right corner of the desktop and
     connect to wifi sid.
 
-Connect Raspberry Pi Camera Module
-----------------------------------
+## Connect Raspberry Pi Camera Module
 
 Before setting the camera configurations, first connect the camera to
 Raspberry Pi. The cable slots into the connector situated between the
@@ -312,7 +300,7 @@ commands to update Raspberry Pi.
 	pi$ sudo apt-get update
 	pi$ sudo apt-get upgrade
 
-### Enable Camera
+#### Enable Camera
 
 For face detection, PiCamera should be enabled from Raspberry Pi. The
 following list of figures shows the detailed steps on how to enable
@@ -340,8 +328,7 @@ Camera[]{label="F:enbcamera"}](images/enablecamera2.jpg)
 ![Enable
 Camera[]{label="F:enbcamera"}](images/enablecamera3.jpg)
 
-Install OpenCV and Required Libraries
--------------------------------------
+## Install OpenCV and Required Libraries
 
 OpenCV computer vision library is used to for face detection from the
 live video streaming. Execute the following commands to install OpenCV
@@ -377,8 +364,7 @@ After executing the commands the latest version of OpenCV is now
 installed in Raspberry Pi. Time taken to install OpenCV is about 15
 minutes.
 
-Integration of Raspberry Pi with Robot Car
-------------------------------------------
+## Integration of Raspberry Pi with Robot Car
 
 Raspberry Pi connected with PiCamera is integrated with Robot car to
 navigate using a web server. During the navigation, robot car will look
@@ -412,8 +398,7 @@ In the Table [\[T:pinlayout\]](#T:pinlayout){reference-type="ref"
 reference="T:pinlayout"}, shows the connectivity of Raspberry Pi GPIO
 pins to L298N stepper motor controller.
 
-  Actuator       Raspberry Pi GPIO Pin   L298N Pin
-  -------------- ----------------------- -----------
+##   Actuator       Raspberry Pi GPIO Pin   L298N Pin
   Motor1A        GPIO23                  IN1
   Motor1B        GPIO24                  IN2
   Motor1Enable   GPIO25                  ENA
@@ -424,8 +409,7 @@ pins to L298N stepper motor controller.
   : Pin connections of Raspberry Pi to stepper motor
   controller[]{label="T:pinlayout"}
 
-Kairos Face Recognition Setup
------------------------------
+## Kairos Face Recognition Setup
 
 Kairos Face Recognition system has a free developer account which is
 used to identify the human name from the images. Once registered a human
@@ -458,11 +442,9 @@ Setup as follows:
 With the completed steps, Kairos face recognition application will be
 created and ready for face recognition from the images.
 
-Code Explanation
-================
+# Code Explanation
 
-Face Detection
---------------
+## Face Detection
 
 Before configuring face detection for the robot car, related libraries
 including PiCamera and PiRGBArray libraries for camera to operate should
@@ -579,8 +561,7 @@ detection[]{label="F:sideview2"}](images/Face-detect-sideview2.png)
             del camera
             exit()
 
-Face Recognition
-----------------
+## Face Recognition
 
 For the Face Recognition, we use Kairos to detect the facial
 characteristics. A JSON config file is to be placed in the same folder
@@ -711,8 +692,7 @@ corresponding events, then Robot car will greet the user with his name.
             "Hello...""{}"'.format(nameToRegister))
             exit()
 
-Robot Car Navigation
---------------------
+## Robot Car Navigation
 
     import RPi.GPIO as GPIO
     from time import sleep
@@ -794,8 +774,7 @@ Robot Car Navigation
     	GPIO.output(Motor2B,GPIO.LOW)
     	GPIO.output(Motor2Enable,GPIO.LOW)
 
-Controling Robot Car using webserver
-------------------------------------
+## Controling Robot Car using webserver
 
     from flask import Flask, render_template, \ 
     request, redirect, url_for, make_response
@@ -844,8 +823,7 @@ Controling Robot Car using webserver
     #set up the server in debug mode to the port 8000
     app.run(debug=True, host='0.0.0.0', port=8000) 
 
-Applications
-============
+# Applications
 
 There are lots of applications of face recognition. Face recognition is
 already being used to unlock phones and specific applications. Face
@@ -853,8 +831,7 @@ recognition is also used for biometric surveillance. Banks, retail
 stores, stadiums, airports and other facilities use face recognition to
 reduce crime and prevent violence.
 
-Conclusion
-==========
+# Conclusion
 
 A robot car using Raspberry Pi is designed to detect and recognize the
 human faces from the images taken from PiCamera attached to the
@@ -869,6 +846,6 @@ face detection in real time. As per the analysis, this current system
 shows tremendous performance efficiency where the face detection and
 recognition can be performed even with very low-quality images.
 
-The authors would like to thank Dr. Gregor von Laszewski for his support
+The authors would like to thank Dr. Gregor von Laszewski for his support
 and suggestions in writing this paper.
 
