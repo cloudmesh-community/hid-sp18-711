@@ -1,4 +1,4 @@
-# Raspberry Pi, Robot Car, Face Recognition, Face Identification, 
+# Raspberry Pi, Robot Car, Face Recognition and Face Identification
 
 I523, HID319, SP18-711, mkagita@iu.edu
 
