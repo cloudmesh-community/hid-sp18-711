@@ -1,8 +1,16 @@
 # Raspberry Pi, Robot Car, Face Recognition and Face Identification
 
-I523, HID319, SP18-711, mkagita@iu.edu
+| Mani Kumar Kagita 
+| mkagita@iu.edu 
+| Indiana University - Bloomington 
+| hid: SP18-711 
+| github: [:cloud:](https://github.com/cloudmesh-community/hid-sp18-711/blob/master/project-paper/report.md)
+| code: [:cloud:](https://github.com/cloudmesh-community/hid-sp18-711/tree/master/project-code)
 
-TODO: indent them under the title
+
+Keywords: I523, HID319, SP18-711, Robot Car, Face Recognition
+
+
 
 # Introduction
 
@@ -124,13 +132,14 @@ human face in an image with multiple images in the database. Face
 recognition techniques have more advantages than any other biometrics.
 With well-sophisticated algorithms and coding, face recognition has a
 high recognition rate or high identification rate of more than
-90% [@riddhi2013].
+90% [@riddhi2013]. Following fugure represents the various levels 
+of face recognition process [@viola2001].
 
 
 ![Block Diagram of a Face Recognition
 System](images/Face-recognition.jpg){#fig:face-recognition}
 
-TODO: +@#fig:face-recognition must be cited in text
+
 
 ## Face Recognition and Big Data Analysis
 
@@ -304,7 +313,7 @@ commands to update Raspberry Pi.
 
 For face detection, PiCamera should be enabled from Raspberry Pi. The
 following list of figures shows the detailed steps on how to enable
-PiCamera.
+PiCamera [@boris2014].
 
 As shown in Figure [\[F:raspi\]](#F:raspi){reference-type="ref"
 reference="F:raspi"}, execute the configuration command from terminal.
@@ -334,10 +343,9 @@ OpenCV computer vision library is used to for face detection from the
 live video streaming. Execute the following commands to install OpenCV
 dependencies on the Raspberry Pi.
 
-TODO: add a pi$ in fornt of commands
 
-    sudo apt-get install build-essential
-    sudo cmake pkg-config python-dev libgtk2.0-dev \
+    pi$ sudo apt-get install build-essential
+    pi$ sudo cmake pkg-config python-dev libgtk2.0-dev \
     		libgtk2.0 zlib1g-dev libpng-dev \
     		libjpeg-dev libtiff-dev libjasper-dev \
     		libavcodec-dev swig unzip
@@ -348,17 +356,17 @@ to be installed.
 Download opencv-2.4.9 zip file to Raspberry Pi. Change to the
 corresponding directory and execute the following commands.
 
-    cd opencv-2.4.9
-    sudo apt-get install build-essential cmake \
+    pi$ cd opencv-2.4.9
+    pi$ sudo apt-get install build-essential cmake \
     		pkg-config
-    sudo apt-get install libjpeg-dev libtiff5-dev \
+    pi$ sudo apt-get install libjpeg-dev libtiff5-dev \
     		libjasper-dev libpng12-dev
-    sudo apt-get install python-dev python-numpy \
+    pi$ sudo apt-get install python-dev python-numpy \
     		libtbb2 libtbb-dev libjpeg-dev \
     		libpng-dev libtiff-dev libjasper-dev \
     		libdc1394-22-dev
-    sudo apt-get install python-opencv
-    sudo apt-get install python-matplotlib
+    pi$ sudo apt-get install python-opencv
+    pi$ sudo apt-get install python-matplotlib
 
 After executing the commands the latest version of OpenCV is now
 installed in Raspberry Pi. Time taken to install OpenCV is about 15
