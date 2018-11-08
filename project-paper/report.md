@@ -329,7 +329,7 @@ interface as shown in
 Figure [\[F:enbcamera\]](#F:enbcamera){reference-type="ref"
 reference="F:enbcamera"}.
 
-TODO: use the figure citation as in teh first figure
+:o: TODO: use the figure citation as in the first figure
 
 ![Enable
 Camera[]{label="F:enbcamera"}](images/enablecamera1.jpg)
