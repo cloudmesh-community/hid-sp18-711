@@ -1,5 +1,10 @@
 # Raspberry Pi, Robot Car, Face Recognition and Face Identification
 
+:o: we need to avoid duplication of effort and only use one md file which is located at
+https://github.com/cloudmesh-community/book/blob/master/chapters/pi/car/car-face.md
+pull request should be made there. Both documents include TODOs to fix things. Any 
+figure that dis not metioned by a `In +@LABEL` is a bug
+
 | Mani Kumar Kagita 
 | mkagita@iu.edu 
 | Indiana University - Bloomington 
