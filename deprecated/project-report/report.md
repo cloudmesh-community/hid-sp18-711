@@ -1,17 +1,10 @@
 # Raspberry Pi, Robot Car, Face Recognition and Face Identification
 
-:o: we need to avoid duplication of effort and only use one md file which is located at
-https://github.com/cloudmesh-community/book/blob/master/chapters/pi/car/car-face.md
-pull request should be made there. Both documents include TODOs to fix things. Any 
-figure that dis not metioned by a `In +@LABEL` is a bug
 
 | Mani Kumar Kagita 
 | mkagita@iu.edu 
 | Indiana University - Bloomington 
 | hid: SP18-711 
-| github: [:cloud:](https://github.com/cloudmesh-community/hid-sp18-711/blob/master/project-paper/report.md)
-| code: [:cloud:](https://github.com/cloudmesh-community/hid-sp18-711/tree/master/project-code)
-
 
 Keywords: I523, HID319, SP18-711, Robot Car, Face Recognition
 
