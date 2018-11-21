@@ -1,11 +1,11 @@
 ---
 owner:
-  firstname: "Mani Kumar"
-  lastname: "Kagita"
-  hid: "sp18-711"
-  community: "i523"
-  oldhid: "hid319"
-  year: "Fall17"
+  firstname: Mani Kumar
+  lastname: Kagita
+  hid: hid-sp18-711
+  community: i523
+  oldhid: hid319
+  year: Fall17
 technologies:
   - url: https://github.com/cloudmesh-community/book/blob/master/chapters/pi/car/car-face.md
 paper:
