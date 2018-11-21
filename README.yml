@@ -13,7 +13,7 @@ paper:
     keyword: Waste Management
     url: https://github.com/cloudmesh-community/hid-sp18-709/blob/master/paper-andres-mani/content.tex
     group: hid-sp18-711
-paper:
+paper2:
   - title: Mini Project: ESP8266 and Raspberry Pi Robot Car
     keyword: Raspberry Pi Robot Car
     url: https://github.com/cloudmesh-community/hid-sp18-711/blob/master/paper/content.tex
