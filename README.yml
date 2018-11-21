@@ -1,8 +1,3 @@
-# This file will have to be updated by you throughout the semester, for
-# now just fill out the owner.  This is a yaml file and must be validated
-# by you. If you do not know how to do that, your first task is to
-# write a python3 program that does this.
-#
 ---
 owner:
   firstname: "Mani Kumar"
@@ -11,3 +6,21 @@ owner:
   community: "i523"
   oldhid: "hid319"
   year: "Fall17"
+technologies:
+  - url: https://github.com/cloudmesh-community/book/blob/master/chapters/pi/car/car-face.md
+paper:
+  - title: Big Data Analytics for Municipal Waste Management
+    keyword: Waste Management
+    url: https://github.com/cloudmesh-community/hid-sp18-709/blob/master/paper-andres-mani/content.tex
+    group: hid-sp18-711
+paper:
+  - title: Mini Project: ESP8266 and Raspberry Pi Robot Car
+    keyword: Raspberry Pi Robot Car
+    url: https://github.com/cloudmesh-community/hid-sp18-711/blob/master/paper/content.tex
+    group: hid-sp18-711
+project:
+  - title: Raspberry Pi Robot Car with Face Recognition and Identification
+    keyword: Robot Car Face Recognition
+    url: https://github.com/cloudmesh-community/book/blob/master/chapters/pi/car/car-face.md
+    group: hid-sp18-711
+    code: https://github.com/cloudmesh-community/hid-sp18-711/tree/master/project-code
